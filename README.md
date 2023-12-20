@@ -106,6 +106,25 @@ While pretrained or fine-tuned models are potent tools, they do have limitations
 - It is crucial to bear in mind that when utilizing these tools, the original model might generate content embodying biases like sexism, racism, or homophobia.
 - Fine-tuning the model on our data won't inherently eliminate these biases.
 
+# Chapter 1: Transformer Models
+- Explored the `pipeline()` function in 🤗 Transformers for various NLP tasks.
+- Demonstrated the process of locating and utilizing models from the Hub.
+- Utilized the Inference API for direct model evaluation in the browser.
+- Discussed the core functionalities of Transformer models, highlighting transfer learning and fine-tuning.
+- Emphasized the flexibility in employing the full architecture, encoder, or decoder based on the task at hand.
+- **Encoder Models:** ALBERT, BERT, DistilBERT, ELECTRA, RoBERTa for tasks like sentence classification, named entity recognition, and extractive question answering.
+- **Decoder Models:** CTRL, GPT, GPT-2, Transformer XL for text generation.
+- **Encoder-Decoder Models:** BART, T5, Marian, mBART for tasks such as summarization, translation, and generative question answering.
+- 
+# Chapter 2: Using 🤗 Transformers
+- Acquired foundational knowledge of a Transformer model's fundamental components.
+- Explored the intricacies of a tokenization pipeline and its vital role.
+- Practically implemented a Transformer model, grasping its practical usage.
+- Utilized a tokenizer efficiently to convert text into model-understandable tensors.
+- Configured a seamless integration of tokenizer and model for predictions.
+- Recognized the limitations of input IDs and gained insights into attention masks.
+- Explored and experimented with versatile and customizable tokenizer methods.
+
 
 # Acknowledgements
 - Hugging Face: [The Hugging Face Course 2022](https://huggingface.co/learn/nlp-course).
