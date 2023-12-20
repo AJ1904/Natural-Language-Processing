@@ -106,6 +106,67 @@ While pretrained or fine-tuned models are potent tools, they do have limitations
 - It is crucial to bear in mind that when utilizing these tools, the original model might generate content embodying biases like sexism, racism, or homophobia.
 - Fine-tuning the model on our data won't inherently eliminate these biases.
 
+# Chapter 1: Transformer Models
+- Explored the `pipeline()` function in 🤗 Transformers for various NLP tasks.
+- Demonstrated the process of locating and utilizing models from the Hub.
+- Utilized the Inference API for direct model evaluation in the browser.
+- Discussed the core functionalities of Transformer models, highlighting transfer learning and fine-tuning.
+- Emphasized the flexibility in employing the full architecture, encoder, or decoder based on the task at hand.
+- **Encoder Models:** ALBERT, BERT, DistilBERT, ELECTRA, RoBERTa for tasks like sentence classification, named entity recognition, and extractive question answering.
+- **Decoder Models:** CTRL, GPT, GPT-2, Transformer XL for text generation.
+- **Encoder-Decoder Models:** BART, T5, Marian, mBART for tasks such as summarization, translation, and generative question answering.
+
+# Chapter 2: Using 🤗 Transformers
+- Acquired foundational knowledge of a Transformer model's fundamental components.
+- Explored the intricacies of a tokenization pipeline and its vital role.
+- Practically implemented a Transformer model, grasping its practical usage.
+- Utilized a tokenizer efficiently to convert text into model-understandable tensors.
+- Configured a seamless integration of tokenizer and model for predictions.
+- Recognized the limitations of input IDs and gained insights into attention masks.
+- Explored and experimented with versatile and customizable tokenizer methods.
+
+# Chapter 3: Fine Tuning A Pretrained Model
+- Explored datasets available in the Hub for various tasks.
+- Learned loading and preprocessing datasets, including dynamic padding and collation techniques.
+- Implemented fine-tuning and evaluation procedures for a model with your custom data.
+- Created a training loop from scratch for lower-level model training.
+- Utilized 🤗 Accelerate to streamline the training loop for multiple GPUs or TPUs.
+
+# Chapter 4: Sharing Models And Tokenizers
+- The Hugging Face Hub serves as a central platform for discovering, using, and contributing state-of-the-art models and datasets.
+- It hosts a diverse range of models beyond 🤗 Transformers, covering NLP, speech, vision, and more from various frameworks like Flair, AllenNLP, Asteroid, pyannote, timm, etc.
+- Models are hosted as Git repositories, ensuring version control and reproducibility.
+- Sharing models on the Hub opens access to the community, simplifying usage and eliminating the need for individual model training.
+- Each shared model automatically comes with a hosted Inference API, enabling users to test it with custom inputs directly on the model's page.
+- Accessing and utilizing any public model on the Hub is free, while private sharing options are available through paid plans.
+
+# Chapter 5: The 🤗 Datasets Library
+- Acquired the ability to load datasets from diverse sources: Hugging Face Hub, local machines, or remote servers.
+- Employed Dataset.map() and Dataset.filter() functions for data manipulation and cleaning.
+- Swiftly switched between various data formats like Pandas and NumPy using Dataset.set_format().
+- Crafted and uploaded a custom dataset to the Hugging Face Hub.
+- Leveraged Transformer models to embed documents and constructed a semantic search engine utilizing FAISS.
+
+# Chapter 6: The 🤗 Tokenizers Library
+- Proficiency in training a new tokenizer by leveraging an existing one as a blueprint.
+- Mastery in employing offsets to link token positions back to their original text span.
+- Clear understanding of the distinctions between BPE, WordPiece, and Unigram tokenization methods.
+- Capability to combine various components from the 🤗 Tokenizers library to construct a customized tokenizer.
+- Application of the created tokenizer within the 🤗 Transformers library for practical usage.
+
+# Chapter 7: Main NLP Tasks
+- Familiarity with selecting the optimal architecture (encoder, decoder, encoder-decoder) for specific NLP tasks.
+- Clear understanding of the disparity between pretraining and fine-tuning language models.
+- Proficiency in training Transformer models using either the Trainer API with distributed training features provided by 🤗 Accelerate or TensorFlow and Keras, based on the chosen approach.
+- Comprehension of the significance and constraints associated with metrics such as ROUGE and BLEU in text generation tasks.
+- Competence in interacting with fine-tuned models, both on the Hub and through the pipeline available in 🤗 Transformers.
+
+# Chapter 8: Building And Sharing Demos
+- Creation of Gradio demos using the Interface API, configuring diverse input and output formats.
+- Various methods for sharing Gradio demos, including temporary links and hosting via Hugging Face Spaces.
+- Integration of Gradio demos with models and Spaces on the Hugging Face Hub.
+- Exploration of advanced functionalities such as storing demo state and implementing authentication.
+- Mastery of data flow and layout control within demos using Gradio Blocks.
 
 # Acknowledgements
 - Hugging Face: [The Hugging Face Course 2022](https://huggingface.co/learn/nlp-course).
